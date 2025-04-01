@@ -1,0 +1,12 @@
+C:\Users\Usuario\SurisCodeNoFinalizado\ReservationAPI\Reservation.Shared.Abstractions\bin\Debug\net9.0\ReservationAPI.Shared.Abstractions.deps.json
+C:\Users\Usuario\SurisCodeNoFinalizado\ReservationAPI\Reservation.Shared.Abstractions\bin\Debug\net9.0\ReservationAPI.Shared.Abstractions.dll
+C:\Users\Usuario\SurisCodeNoFinalizado\ReservationAPI\Reservation.Shared.Abstractions\bin\Debug\net9.0\ReservationAPI.Shared.Abstractions.pdb
+C:\Users\Usuario\SurisCodeNoFinalizado\ReservationAPI\Reservation.Shared.Abstractions\obj\Debug\net9.0\ReservationAPI.Shared.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\SurisCodeNoFinalizado\ReservationAPI\Reservation.Shared.Abstractions\obj\Debug\net9.0\ReservationAPI.Shared.Abstractions.AssemblyInfoInputs.cache
+C:\Users\Usuario\SurisCodeNoFinalizado\ReservationAPI\Reservation.Shared.Abstractions\obj\Debug\net9.0\ReservationAPI.Shared.Abstractions.AssemblyInfo.cs
+C:\Users\Usuario\SurisCodeNoFinalizado\ReservationAPI\Reservation.Shared.Abstractions\obj\Debug\net9.0\ReservationAPI.Shared.Abstractions.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\SurisCodeNoFinalizado\ReservationAPI\Reservation.Shared.Abstractions\obj\Debug\net9.0\ReservationAPI.Shared.Abstractions.sourcelink.json
+C:\Users\Usuario\SurisCodeNoFinalizado\ReservationAPI\Reservation.Shared.Abstractions\obj\Debug\net9.0\ReservationAPI.Shared.Abstractions.dll
+C:\Users\Usuario\SurisCodeNoFinalizado\ReservationAPI\Reservation.Shared.Abstractions\obj\Debug\net9.0\refint\ReservationAPI.Shared.Abstractions.dll
+C:\Users\Usuario\SurisCodeNoFinalizado\ReservationAPI\Reservation.Shared.Abstractions\obj\Debug\net9.0\ReservationAPI.Shared.Abstractions.pdb
+C:\Users\Usuario\SurisCodeNoFinalizado\ReservationAPI\Reservation.Shared.Abstractions\obj\Debug\net9.0\ref\ReservationAPI.Shared.Abstractions.dll

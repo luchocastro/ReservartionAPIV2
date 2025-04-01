@@ -1,0 +1,312 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{01279151-EC8C-4C74-9061-2092D384C63F}|ReservationAPI\\ReservationAPI.csproj|c:\\users\\usuario\\source\\repos\\repositorioapi.v2\\reservartionapi\\reservationapi\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01279151-EC8C-4C74-9061-2092D384C63F}|ReservationAPI\\ReservationAPI.csproj|solutionrelative:reservationapi\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92D979E5-3C83-4568-B175-ED9E213363AD}|ReservationAPI.Application\\ReservationAPI.Application.csproj|c:\\users\\usuario\\source\\repos\\repositorioapi.v2\\reservartionapi\\reservationapi.application\\commands\\handlers\\createreservationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92D979E5-3C83-4568-B175-ED9E213363AD}|ReservationAPI.Application\\ReservationAPI.Application.csproj|solutionrelative:reservationapi.application\\commands\\handlers\\createreservationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92D979E5-3C83-4568-B175-ED9E213363AD}|ReservationAPI.Application\\ReservationAPI.Application.csproj|c:\\users\\usuario\\source\\repos\\repositorioapi.v2\\reservartionapi\\reservationapi.application\\commands\\createreservationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92D979E5-3C83-4568-B175-ED9E213363AD}|ReservationAPI.Application\\ReservationAPI.Application.csproj|solutionrelative:reservationapi.application\\commands\\createreservationcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92D979E5-3C83-4568-B175-ED9E213363AD}|ReservationAPI.Application\\ReservationAPI.Application.csproj|c:\\users\\usuario\\source\\repos\\repositorioapi.v2\\reservartionapi\\reservationapi.application\\queries\\reservationqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92D979E5-3C83-4568-B175-ED9E213363AD}|ReservationAPI.Application\\ReservationAPI.Application.csproj|solutionrelative:reservationapi.application\\queries\\reservationqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92D979E5-3C83-4568-B175-ED9E213363AD}|ReservationAPI.Application\\ReservationAPI.Application.csproj|c:\\users\\usuario\\source\\repos\\repositorioapi.v2\\reservartionapi\\reservationapi.application\\integrationevents\\eventhandling\\reservationeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92D979E5-3C83-4568-B175-ED9E213363AD}|ReservationAPI.Application\\ReservationAPI.Application.csproj|solutionrelative:reservationapi.application\\integrationevents\\eventhandling\\reservationeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92D979E5-3C83-4568-B175-ED9E213363AD}|ReservationAPI.Application\\ReservationAPI.Application.csproj|c:\\users\\usuario\\source\\repos\\repositorioapi.v2\\reservartionapi\\reservationapi.application\\dtos\\reservationcreatedintegrationevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92D979E5-3C83-4568-B175-ED9E213363AD}|ReservationAPI.Application\\ReservationAPI.Application.csproj|solutionrelative:reservationapi.application\\dtos\\reservationcreatedintegrationevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01279151-EC8C-4C74-9061-2092D384C63F}|ReservationAPI\\ReservationAPI.csproj|c:\\users\\usuario\\source\\repos\\repositorioapi.v2\\reservartionapi\\reservationapi\\migrations\\2025003333000_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01279151-EC8C-4C74-9061-2092D384C63F}|ReservationAPI\\ReservationAPI.csproj|solutionrelative:reservationapi\\migrations\\2025003333000_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3152378D-25CE-4C41-AEAB-F99403F228FB}|ReservationAPI.Infrastructure\\ReservationAPI.Infrastructure.csproj|c:\\users\\usuario\\source\\repos\\repositorioapi.v2\\reservartionapi\\reservationapi.infrastructure\\repositories\\reservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3152378D-25CE-4C41-AEAB-F99403F228FB}|ReservationAPI.Infrastructure\\ReservationAPI.Infrastructure.csproj|solutionrelative:reservationapi.infrastructure\\repositories\\reservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A1F76F5-F1EF-48DC-9CAF-0553E292D645}|ReservationAPI.Domain\\ReservationAPI.Domain.csproj|c:\\users\\usuario\\source\\repos\\repositorioapi.v2\\reservartionapi\\reservationapi.domain\\aggregatesmodel\\aggregatereservation\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A1F76F5-F1EF-48DC-9CAF-0553E292D645}|ReservationAPI.Domain\\ReservationAPI.Domain.csproj|solutionrelative:reservationapi.domain\\aggregatesmodel\\aggregatereservation\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A1F76F5-F1EF-48DC-9CAF-0553E292D645}|ReservationAPI.Domain\\ReservationAPI.Domain.csproj|c:\\users\\usuario\\source\\repos\\repositorioapi.v2\\reservartionapi\\reservationapi.domain\\aggregatesmodel\\aggregatereservation\\ireservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A1F76F5-F1EF-48DC-9CAF-0553E292D645}|ReservationAPI.Domain\\ReservationAPI.Domain.csproj|solutionrelative:reservationapi.domain\\aggregatesmodel\\aggregatereservation\\ireservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92D979E5-3C83-4568-B175-ED9E213363AD}|ReservationAPI.Application\\ReservationAPI.Application.csproj|c:\\users\\usuario\\source\\repos\\repositorioapi.v2\\reservartionapi\\reservationapi.application\\dtos\\reservationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92D979E5-3C83-4568-B175-ED9E213363AD}|ReservationAPI.Application\\ReservationAPI.Application.csproj|solutionrelative:reservationapi.application\\dtos\\reservationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A1F76F5-F1EF-48DC-9CAF-0553E292D645}|ReservationAPI.Domain\\ReservationAPI.Domain.csproj|c:\\users\\usuario\\source\\repos\\repositorioapi.v2\\reservartionapi\\reservationapi.domain\\interfaces\\ireservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A1F76F5-F1EF-48DC-9CAF-0553E292D645}|ReservationAPI.Domain\\ReservationAPI.Domain.csproj|solutionrelative:reservationapi.domain\\interfaces\\ireservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92D979E5-3C83-4568-B175-ED9E213363AD}|ReservationAPI.Application\\ReservationAPI.Application.csproj|c:\\users\\usuario\\source\\repos\\reservationapi\\reservation.api\\reservationapi.application\\integration\\integration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3152378D-25CE-4C41-AEAB-F99403F228FB}|ReservationAPI.Infrastructure\\ReservationAPI.Infrastructure.csproj|c:\\users\\usuario\\source\\repos\\repositorioapi.v2\\reservartionapi\\reservationapi.infrastructure\\entityconfiguration\\reservationentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3152378D-25CE-4C41-AEAB-F99403F228FB}|ReservationAPI.Infrastructure\\ReservationAPI.Infrastructure.csproj|solutionrelative:reservationapi.infrastructure\\entityconfiguration\\reservationentitytypeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3152378D-25CE-4C41-AEAB-F99403F228FB}|ReservationAPI.Infrastructure\\ReservationAPI.Infrastructure.csproj|c:\\users\\usuario\\source\\repos\\repositorioapi.v2\\reservartionapi\\reservationapi.infrastructure\\context\\reservationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3152378D-25CE-4C41-AEAB-F99403F228FB}|ReservationAPI.Infrastructure\\ReservationAPI.Infrastructure.csproj|solutionrelative:reservationapi.infrastructure\\context\\reservationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3152378D-25CE-4C41-AEAB-F99403F228FB}|ReservationAPI.Infrastructure\\ReservationAPI.Infrastructure.csproj|c:\\users\\usuario\\source\\repos\\repositorioapi.v2\\reservartionapi\\reservationapi.infrastructure\\factories\\reservationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3152378D-25CE-4C41-AEAB-F99403F228FB}|ReservationAPI.Infrastructure\\ReservationAPI.Infrastructure.csproj|solutionrelative:reservationapi.infrastructure\\factories\\reservationfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3152378D-25CE-4C41-AEAB-F99403F228FB}|ReservationAPI.Infrastructure\\ReservationAPI.Infrastructure.csproj|c:\\users\\usuario\\source\\repos\\repositorioapi.v2\\reservartionapi\\reservationapi.infrastructure\\autofacmodule\\mediatormodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3152378D-25CE-4C41-AEAB-F99403F228FB}|ReservationAPI.Infrastructure\\ReservationAPI.Infrastructure.csproj|solutionrelative:reservationapi.infrastructure\\autofacmodule\\mediatormodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReservationQueries.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Application\\Queries\\ReservationQueries.cs",
+              "RelativeDocumentMoniker": "ReservationAPI.Application\\Queries\\ReservationQueries.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Application\\Queries\\ReservationQueries.cs",
+              "RelativeToolTip": "ReservationAPI.Application\\Queries\\ReservationQueries.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T03:42:32.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReservationCreatedIntegrationEvent.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Application\\DTOs\\ReservationCreatedIntegrationEvent.cs",
+              "RelativeDocumentMoniker": "ReservationAPI.Application\\DTOs\\ReservationCreatedIntegrationEvent.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Application\\DTOs\\ReservationCreatedIntegrationEvent.cs",
+              "RelativeToolTip": "ReservationAPI.Application\\DTOs\\ReservationCreatedIntegrationEvent.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T03:42:29.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "2025003333000_initial.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI\\Migrations\\2025003333000_initial.cs",
+              "RelativeDocumentMoniker": "ReservationAPI\\Migrations\\2025003333000_initial.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI\\Migrations\\2025003333000_initial.cs",
+              "RelativeToolTip": "ReservationAPI\\Migrations\\2025003333000_initial.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T03:42:26.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReservationEventHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Application\\IntegrationEvents\\EventHandling\\ReservationEventHandler.cs",
+              "RelativeDocumentMoniker": "ReservationAPI.Application\\IntegrationEvents\\EventHandling\\ReservationEventHandler.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Application\\IntegrationEvents\\EventHandling\\ReservationEventHandler.cs",
+              "RelativeToolTip": "ReservationAPI.Application\\IntegrationEvents\\EventHandling\\ReservationEventHandler.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAewCUAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T03:27:09.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReservationController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI\\Controllers\\ReservationController.cs",
+              "RelativeDocumentMoniker": "ReservationAPI\\Controllers\\ReservationController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI\\Controllers\\ReservationController.cs",
+              "RelativeToolTip": "ReservationAPI\\Controllers\\ReservationController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAewGUAAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T03:16:58.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ReservationEntityTypeConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Infrastructure\\EntityConfiguration\\ReservationEntityTypeConfiguration.cs",
+              "RelativeDocumentMoniker": "ReservationAPI.Infrastructure\\EntityConfiguration\\ReservationEntityTypeConfiguration.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Infrastructure\\EntityConfiguration\\ReservationEntityTypeConfiguration.cs",
+              "RelativeToolTip": "ReservationAPI.Infrastructure\\EntityConfiguration\\ReservationEntityTypeConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T03:07:53.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Reservation.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Domain\\AggregatesModel\\AggregateReservation\\Reservation.cs",
+              "RelativeDocumentMoniker": "ReservationAPI.Domain\\AggregatesModel\\AggregateReservation\\Reservation.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Domain\\AggregatesModel\\AggregateReservation\\Reservation.cs",
+              "RelativeToolTip": "ReservationAPI.Domain\\AggregatesModel\\AggregateReservation\\Reservation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T02:55:08.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MediatorModule.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Infrastructure\\AutoFacModule\\MediatorModule.cs",
+              "RelativeDocumentMoniker": "ReservationAPI.Infrastructure\\AutoFacModule\\MediatorModule.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Infrastructure\\AutoFacModule\\MediatorModule.cs",
+              "RelativeToolTip": "ReservationAPI.Infrastructure\\AutoFacModule\\MediatorModule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T02:47:07.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReservationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Infrastructure\\Repositories\\ReservationRepository.cs",
+              "RelativeDocumentMoniker": "ReservationAPI.Infrastructure\\Repositories\\ReservationRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Infrastructure\\Repositories\\ReservationRepository.cs",
+              "RelativeToolTip": "ReservationAPI.Infrastructure\\Repositories\\ReservationRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAACGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T02:45:01.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ReservationContext.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Infrastructure\\Context\\ReservationContext.cs",
+              "RelativeDocumentMoniker": "ReservationAPI.Infrastructure\\Context\\ReservationContext.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Infrastructure\\Context\\ReservationContext.cs",
+              "RelativeToolTip": "ReservationAPI.Infrastructure\\Context\\ReservationContext.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwCgAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T02:44:45.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateReservationHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Application\\Commands\\Handlers\\CreateReservationHandler.cs",
+              "RelativeDocumentMoniker": "ReservationAPI.Application\\Commands\\Handlers\\CreateReservationHandler.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Application\\Commands\\Handlers\\CreateReservationHandler.cs",
+              "RelativeToolTip": "ReservationAPI.Application\\Commands\\Handlers\\CreateReservationHandler.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T01:12:15.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ReservationFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Infrastructure\\Factories\\ReservationFactory.cs",
+              "RelativeDocumentMoniker": "ReservationAPI.Infrastructure\\Factories\\ReservationFactory.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Infrastructure\\Factories\\ReservationFactory.cs",
+              "RelativeToolTip": "ReservationAPI.Infrastructure\\Factories\\ReservationFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T02:44:02.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IReservationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Domain\\AggregatesModel\\AggregateReservation\\IReservationRepository.cs",
+              "RelativeDocumentMoniker": "ReservationAPI.Domain\\AggregatesModel\\AggregateReservation\\IReservationRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Domain\\AggregatesModel\\AggregateReservation\\IReservationRepository.cs",
+              "RelativeToolTip": "ReservationAPI.Domain\\AggregatesModel\\AggregateReservation\\IReservationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T02:41:48.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ReservationDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Application\\DTOs\\ReservationDTO.cs",
+              "RelativeDocumentMoniker": "ReservationAPI.Application\\DTOs\\ReservationDTO.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Application\\DTOs\\ReservationDTO.cs",
+              "RelativeToolTip": "ReservationAPI.Application\\DTOs\\ReservationDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T02:36:15.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IReservationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Domain\\Interfaces\\IReservationRepository.cs",
+              "RelativeDocumentMoniker": "ReservationAPI.Domain\\Interfaces\\IReservationRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Domain\\Interfaces\\IReservationRepository.cs",
+              "RelativeToolTip": "ReservationAPI.Domain\\Interfaces\\IReservationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T02:43:25.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateReservationCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Application\\Commands\\CreateReservationCommand.cs",
+              "RelativeDocumentMoniker": "ReservationAPI.Application\\Commands\\CreateReservationCommand.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Application\\Commands\\CreateReservationCommand.cs",
+              "RelativeToolTip": "ReservationAPI.Application\\Commands\\CreateReservationCommand.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T01:19:23.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Integration.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\ReservationAPI\\Reservation.API\\ReservationAPI.Application\\Integration\\Integration.cs",
+              "RelativeDocumentMoniker": "..\\..\\ReservationAPI\\Reservation.API\\ReservationAPI.Application\\Integration\\Integration.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\ReservationAPI\\Reservation.API\\ReservationAPI.Application\\Integration\\Integration.cs",
+              "RelativeToolTip": "..\\..\\ReservationAPI\\Reservation.API\\ReservationAPI.Application\\Integration\\Integration.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAuwDgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T03:15:40.788Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
