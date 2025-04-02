@@ -153,6 +153,14 @@
           }
         }
       },
+      "Dapper/2.1.66": {
+        "runtime": {
+          "lib/net8.0/Dapper.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.1.66.48463"
+          }
+        }
+      },
       "FluentValidation/11.0.0": {
         "runtime": {
           "lib/net6.0/FluentValidation.dll": {
@@ -1537,6 +1545,7 @@
       "ReservationAPI.Application/1.0.0": {
         "dependencies": {
           "Azure.Messaging.ServiceBus": "7.18.4",
+          "Dapper": "2.1.66",
           "MediatR.Contracts": "2.0.1",
           "Microsoft.AspNetCore.Http": "2.3.0",
           "Microsoft.AspNetCore.Http.Features": "5.0.17",
@@ -1546,7 +1555,6 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.3",
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "9.0.3",
           "ReservationAPI.Domain": "1.0.0",
-          "ReservationAPI.Infrastructure": "1.0.0",
           "Swashbuckle.AspNetCore": "8.1.0",
           "Swashbuckle.AspNetCore.Swagger": "8.1.0",
           "Swashbuckle.AspNetCore.SwaggerGen": "8.1.0",
@@ -1687,6 +1695,13 @@
       "sha512": "sha512-p407IN0ubqKMijByGYxNz3lnW7G8n2joZHQUfwzm5tu/Hrf8ys3SvKmU0cot00c9Y0jqxxg/le/qjoxltHF8gw==",
       "path": "azure.messaging.servicebus/7.18.4",
       "hashPath": "azure.messaging.servicebus.7.18.4.nupkg.sha512"
+    },
+    "Dapper/2.1.66": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/q77jUgDOS+bzkmk3Vy9SiWMaetTw+NOoPAV0xPBsGVAyljd5S6P+4RUW7R3ZUGGr9lDRyPKgAMj2UAOwvqZYw==",
+      "path": "dapper/2.1.66",
+      "hashPath": "dapper.2.1.66.nupkg.sha512"
     },
     "FluentValidation/11.0.0": {
       "type": "package",

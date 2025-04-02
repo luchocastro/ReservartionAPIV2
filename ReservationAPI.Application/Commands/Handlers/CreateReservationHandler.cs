@@ -1,17 +1,15 @@
 
-using Mediator;
 using ReservationAPI.Application.DTOs;
 using ReservationAPI.Domain.AggregatesModel.AggregateReservation;
 using ReservationAPI.Domain.Events;
-using ReservationAPI.Infrastructure.Repositories;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace ReservationAPI.Application.Commands.Handlers;
 
 
     
 
-    public class CreateReservationCommandHandler
-    {
+    public class CreateReservationCommandHandler : ReservationAPI.Application.Commands.Interface.ICommandHandler<CreateReservationCommand>
+{
     private readonly IReservationRepository _reservationRepository;
 
     public CreateReservationCommandHandler(IReservationRepository reservationRepository)
@@ -19,7 +17,7 @@ namespace ReservationAPI.Application.Commands.Handlers;
         _reservationRepository = reservationRepository;
         }
 
-        public async Task<ReservationDTO> Handle(CreateReservationCommand reservationCommand, CancellationToken cancellationToken)
+        public async Task  HandleAsync(CreateReservationCommand reservationCommand)
         {
             var reservationDTO = new ReservationDTO 
             {
@@ -37,6 +35,10 @@ namespace ReservationAPI.Application.Commands.Handlers;
         }
         await _reservationRepository.CreateAsync(new Reservation(Guid.NewGuid().ToString(), reservationDTO.ClientName,
         date, reservationDTO.Hour, reservationDTO.Service));
-            return await Task.FromResult(reservationDTO);
+        await Task.FromResult(reservationDTO);
         }
-    }
+
+ 
+
+   
+}

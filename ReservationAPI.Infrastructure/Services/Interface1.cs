@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReservationAPI.Infrastructure.EventIntegration
+namespace ReservationAPI.Infrastructure.Services
 {
-    internal class Class1
+    internal interface IReservationReadService
     {
     }
 }

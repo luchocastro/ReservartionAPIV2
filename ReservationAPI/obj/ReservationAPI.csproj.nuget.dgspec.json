@@ -36,9 +36,6 @@
             "projectReferences": {
               "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Domain\\ReservationAPI.Domain.csproj": {
                 "projectPath": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Domain\\ReservationAPI.Domain.csproj"
-              },
-              "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Infrastructure\\ReservationAPI.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\source\\repos\\RepositorioAPI.V2\\ReservartionAPI\\ReservationAPI.Infrastructure\\ReservationAPI.Infrastructure.csproj"
               }
             }
           }
@@ -62,6 +59,10 @@
             "Azure.Messaging.ServiceBus": {
               "target": "Package",
               "version": "[7.18.4, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
             },
             "MediatR.Contracts": {
               "target": "Package",

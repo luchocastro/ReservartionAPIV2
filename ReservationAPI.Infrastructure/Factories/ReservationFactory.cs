@@ -1,20 +1,21 @@
 ﻿using Microsoft.Extensions.Configuration;
 using ReservationAPI.Infrastructure.Context;
-public class ReservationFactory : IDesignTimeDbContextFactory<ReservationContext>
+public class ReservationFactory : IDesignTimeDbContextFactory<WriteReservationContext>
     {
-        public ReservationContext CreateDbContext(string[] args)
+        public WriteReservationContext CreateDbContext(string[] args)
         {
             var config = new ConfigurationBuilder()
                .SetBasePath(Path.Combine(Directory.GetCurrentDirectory()))
                .AddJsonFile("appsettings.json")
                .AddEnvironmentVariables()
-               .Build();
+               .Build()
+               ;
+                
+            var optionsBuilder = new DbContextOptionsBuilder<WriteReservationContext>();
 
-            var optionsBuilder = new DbContextOptionsBuilder<ReservationContext>();
+            optionsBuilder.UseSqlite(config["ConnectionString"] ?? "Data Source=reservation.db", sqliteOptionsAction: o => o.MigrationsAssembly("ReservationAPI"));
 
-            optionsBuilder.UseSqlServer(config["ConnectionString"], sqlServerOptionsAction: o => o.MigrationsAssembly("Ordering.API"));
-
-            return new ReservationContext(optionsBuilder.Options);
+            return new WriteReservationContext(optionsBuilder.Options);
         }
     }
 

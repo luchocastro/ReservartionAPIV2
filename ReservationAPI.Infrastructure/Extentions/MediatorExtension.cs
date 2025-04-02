@@ -16,7 +16,7 @@ namespace ReservationAPI.Infrastructure.Extentions
     {
         public static class MediatorExtension
         {
-            public static async Task DispatchDomainEventsAsync(this IMediator mediator, ReservationContext ctx)
+            public static async Task DispatchDomainEventsAsync(this IMediator mediator, WriteReservationContext ctx)
             {
                 var domainEntities = ctx.ChangeTracker.Entries<Entity>().Where(x => x.Entity.DomainEvents != null && x.Entity.DomainEvents.Any());
                 var domainEvents = domainEntities.SelectMany(x => x.Entity.DomainEvents).ToList();

@@ -2,6 +2,6 @@
 
 public interface IReservationQueries
 {
-   public Task<List<Reservation>> GetReservations();
+   public Task<IEnumerable<Reservation>> GetReservations();
     public Task<List<String>> GetFreeHours(string date);
 }

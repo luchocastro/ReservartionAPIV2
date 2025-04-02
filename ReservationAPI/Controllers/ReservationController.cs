@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ReservationAPI.Application.Commands;
+using ReservationAPI.Application.Commands.Handlers;
+using ReservationAPI.Application.Commands.Interface;
 using ReservationAPI.Application.DTOs;
 using ReservationAPI.Application.Queries;
 using System.Diagnostics;
@@ -21,18 +23,20 @@ namespace ReservationAPI.Application.Controllers
         private readonly ILogger<ReservationController> _logger;
         private readonly IReservationQueries _reservationQueries;
         private readonly IServiceQueries _serviceQueries; 
-        private readonly IRequestHandler<CreateReservationCommand,
-          ReservationDTO> _createReservationCommandHandler;
+        private readonly ICommandHandler<CreateReservationCommand> _createReservationCommandHandler;
         public ReservationController(
             IMediator mediator,
             ILogger<ReservationController> logger,
             IReservationQueries reservationQueries,
-            IServiceQueries serviceQueries)
+            IServiceQueries serviceQueries,
+            ICommandHandler<CreateReservationCommand> createReservationCommandHandler
+            )
         {
             _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
             _reservationQueries = reservationQueries  ?? throw new ArgumentNullException(nameof(reservationQueries));
             _serviceQueries = serviceQueries ?? throw new ArgumentNullException(nameof(serviceQueries));
+            _createReservationCommandHandler= createReservationCommandHandler ?? throw new ArgumentNullException(nameof(_createReservationCommandHandler));
         }
         [Route("reservations")]
         [HttpGet]
@@ -66,7 +70,7 @@ namespace ReservationAPI.Application.Controllers
             {
                 //Todo: It's good idea to take advantage of GetOrderByIdQuery and handle by GetCustomerByIdQueryHandler
                 //var order customer = await _mediator.Send(new GetOrderByIdQuery(orderId));
-                var reservation = await _reservationQueries.GetFreeHours(date);
+              var reservation = await _reservationQueries.GetFreeHours(date);
 
                 return Ok(reservation);
             }
@@ -99,7 +103,7 @@ namespace ReservationAPI.Application.Controllers
         {
             try
             {
-                await _createReservationCommandHandler.Handle(createReservationCommand, CancellationToken.None);
+                await _createReservationCommandHandler.HandleAsync(createReservationCommand);
                 return Ok(createReservationCommand);
 
             }

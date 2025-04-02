@@ -3,11 +3,11 @@ namespace ReservationAPI.Application.Queries;
 
 public record Reservation
 {
-    public string Id { get; init; }
-    public string ClientName { get; init; }
-    public DateOnly Date { get; init; }
-    public string Hour { get; init; }
-    public string Service { get; init; }
+    public string Id { get; set; }
+    public string ClientName { get; set; }
+    public string Date { get; set; }
+    public string Hour { get; set; }
+    public string Service { get; set; }
 }
 
 

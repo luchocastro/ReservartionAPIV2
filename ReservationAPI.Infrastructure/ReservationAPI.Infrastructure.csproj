@@ -46,4 +46,9 @@
     <ProjectReference Include="..\ReservationAPI.Domain\ReservationAPI.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="EventIntegration\" />
+    <Folder Include="Queries\" />
+  </ItemGroup>
+
 </Project>

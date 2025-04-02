@@ -48,3 +48,4 @@ C:\Users\Usuario\source\repos\RepositorioAPI.V2\ReservartionAPI\ReservationAPI.I
 C:\Users\Usuario\source\repos\RepositorioAPI.V2\ReservartionAPI\ReservationAPI.Infrastructure\obj\Debug\net9.0\Reservat.06096746.Up2Date
 C:\Users\Usuario\source\repos\RepositorioAPI.V2\ReservartionAPI\ReservationAPI.Infrastructure\obj\Debug\net9.0\ReservationAPI.Infrastructure.genruntimeconfig.cache
 C:\Users\Usuario\source\repos\RepositorioAPI.V2\ReservartionAPI\ReservationAPI.Infrastructure\obj\Debug\net9.0\ref\ReservationAPI.Infrastructure.dll
+C:\Users\Usuario\source\repos\RepositorioAPI.V2\ReservartionAPI\ReservationAPI.Infrastructure\obj\Debug\net9.0\ReservationAPI.Infrastructure.sourcelink.json

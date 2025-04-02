@@ -1,5 +1,5 @@
 ﻿using ReservationAPI.Domain.AggregatesModel.AggregateReservation;
-
+using ReservationAPI.Infrastructure.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,11 +9,13 @@ namespace ReservationAPI.Infrastructure.Repositories;
     public class ReservationRepository : IReservationRepository
     {
         private static readonly List<Reservation> _reservations = new List<Reservation>();
+    private readonly WriteReservationContext _writeReservationContext;
 
-        //public async Task<IEnumerable<Reservation>> GetAllAsync()
-        //{
-        //    return await Task.FromResult(_reservations);
-        //}
+
+    public ReservationRepository(WriteReservationContext writeReservationContext)
+    {
+        _writeReservationContext = writeReservationContext;
+    }
 
         public async Task<Reservation> GetByIdAsync(string id)
         {
@@ -22,8 +24,9 @@ namespace ReservationAPI.Infrastructure.Repositories;
 
         public async Task<Reservation> CreateAsync(Reservation reservation)
         {
-        
-            _reservations.Add(reservation);
+
+            var x = await _writeReservationContext.AddAsync(reservation);
+        _writeReservationContext.SaveChanges();
             return await Task.FromResult(reservation);
         }
 

@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.18.4" />
+    <PackageReference Include="Dapper" Version="2.1.66" />
     <PackageReference Include="MediatR.Contracts" Version="2.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
@@ -32,7 +33,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ReservationAPI.Domain\ReservationAPI.Domain.csproj" />
-    <ProjectReference Include="..\ReservationAPI.Infrastructure\ReservationAPI.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

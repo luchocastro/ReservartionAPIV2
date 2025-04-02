@@ -28,8 +28,7 @@ C:\Users\Usuario\source\repos\RepositorioAPI.V2\ReservartionAPI\ReservationAPI.A
 C:\Users\Usuario\source\repos\RepositorioAPI.V2\ReservartionAPI\ReservationAPI.Application\bin\Debug\net9.0\ReservationAPI.Application.dll
 C:\Users\Usuario\source\repos\RepositorioAPI.V2\ReservartionAPI\ReservationAPI.Application\bin\Debug\net9.0\ReservationAPI.Application.pdb
 C:\Users\Usuario\source\repos\RepositorioAPI.V2\ReservartionAPI\ReservationAPI.Application\bin\Debug\net9.0\ReservationAPI.Domain.dll
-C:\Users\Usuario\source\repos\RepositorioAPI.V2\ReservartionAPI\ReservationAPI.Application\bin\Debug\net9.0\ReservationAPI.Infrastructure.dll
 C:\Users\Usuario\source\repos\RepositorioAPI.V2\ReservartionAPI\ReservationAPI.Application\bin\Debug\net9.0\ReservationAPI.Domain.pdb
-C:\Users\Usuario\source\repos\RepositorioAPI.V2\ReservartionAPI\ReservationAPI.Application\bin\Debug\net9.0\ReservationAPI.Infrastructure.pdb
 C:\Users\Usuario\source\repos\RepositorioAPI.V2\ReservartionAPI\ReservationAPI.Application\obj\Debug\net9.0\Reservat.5D4B3429.Up2Date
 C:\Users\Usuario\source\repos\RepositorioAPI.V2\ReservartionAPI\ReservationAPI.Application\obj\Debug\net9.0\ref\ReservationAPI.Application.dll
+C:\Users\Usuario\source\repos\RepositorioAPI.V2\ReservartionAPI\ReservationAPI.Application\obj\Debug\net9.0\ReservationAPI.Application.sourcelink.json

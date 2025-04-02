@@ -9,18 +9,14 @@ class ReservationEntityTypeConfiguration
     : IEntityTypeConfiguration<Reservation>
 {
     public void Configure(EntityTypeBuilder<Reservation> ReservationConfiguration)
-    {
-        
-        ReservationConfiguration.ToTable("Reservation", ReservationContext.DEFAULT_SCHEMA);
-
+    {   
         ReservationConfiguration.HasKey(b => b.Id);
-
-       
         ReservationConfiguration.HasIndex("Id")
             .IsUnique(true);
         ReservationConfiguration.Property(b => b.Hour);
         ReservationConfiguration.Property(b => b.Date);
         ReservationConfiguration.Property(b => b.ClientName);
         ReservationConfiguration.Property(b => b.Service);
+        ReservationConfiguration.ToTable("Reservation");
     }
 }

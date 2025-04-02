@@ -4,9 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReservationAPI.Infrastructure
+namespace ReservationAPI.Application.Commands.Interface;
+public interface ICommand
 {
-    internal class Class1
-    {
-    }
 }

@@ -2,5 +2,5 @@
 
 public interface IServiceQueries
 {
-   public Task<List<Service>> GetServiceAsync();
+   public Task<IEnumerable<Service>> GetServiceAsync();
 }

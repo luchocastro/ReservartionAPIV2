@@ -1,10 +1,12 @@
 ﻿
 
+using Dapper;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.VisualBasic;
 using System.Diagnostics;
 using System.Reflection;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ReservationAPI.Application.Queries;
 
@@ -31,47 +33,14 @@ public class ReservationQueries : IReservationQueries
         var c = 20;
         var TotalHours = Enumerable.Range(ap, cs);
         TotalHours.ToList().AddRange(Enumerable.Range(aps, c));
-        var List = new List<string>();
+        
         using var connection = new SqliteConnection(_connectionString);
-        connection.Open();
-        var command = new SqliteCommand("Select Hour from Reservation where [date] = '$fecha'", connection);
-        command.Parameters.AddWithValue("$date", sdate);
-        command.CommandType = System.Data.CommandType.Text;
-        try
-        {
-            using (var reader = await command.ExecuteReaderAsync())
-            {
-                if (reader.HasRows)
-                {
-                    while (await reader.ReadAsync())
-                    {
-                        List.Add( reader.GetString(0));
-
-                    }
-                }
-            }
-            return await Task.FromResult(TotalHours.Where(h => List.ToList().IndexOf(h.ToString()) < 0).Select(x => x.ToString().PadLeft(2, '0') + ":00").ToList());        
-        }
-        catch (Exception ex)
-        {
-            if (ex.Message.ToLower().Contains("no such table"))
-            {
-
-                command = new SqliteCommand("Create Table Service (Id,Name)", connection);
-                command.CommandType = System.Data.CommandType.Text;
-                command.ExecuteNonQuery();
-
-                command = new SqliteCommand("Insert into Service (Id, Name) Values ( '1', 'Corte'), ( '2', 'Corte y Afeitado')" +
-                ", ('3', 'Rasurado'), ( '4', 'Afeitado'), ( '5', 'Manicura')", connection);
-                command.CommandType = System.Data.CommandType.Text;
-                command.ExecuteNonQuery();
-
-                command = new SqliteCommand("Create Table Reservation (Id,ClientName, Date, Hour, Service)", connection);
-                command.CommandType = System.Data.CommandType.Text;
-                command.ExecuteNonQuery();
-            }
-            throw (ex);
-        }
+        var sql = "SELECT Hour FROM Reservation WHERE date=@date";
+        // Use the Query method to execute the query and return a list of objects    
+        var Reservations = await connection.QueryAsync<Reservation>(sql, new { date = sdate }) ;
+        var List = Reservations.Select(x => x.Hour);
+        return await Task.FromResult(TotalHours.Select(x=>x.ToString().PadLeft(2, '0') + ":00").Where(h => List.ToList().IndexOf(h.ToString()) < 0).Select(x => x).ToList());        
+        
         //deberìa vernir de la DB
         
 
@@ -79,50 +48,37 @@ public class ReservationQueries : IReservationQueries
     }
 
 
-    public async Task<List<Reservation>> GetReservations()
+    public async Task<IEnumerable<Reservation>> GetReservations()
     {
-        var List = new List<Reservation>();
-        using var connection = new SqliteConnection(_connectionString);
-        connection.Open();
-        var command = new SqliteCommand("Select * from Reservation", connection);
-        command.CommandType = System.Data.CommandType.Text;
         try
         {
-            using (var reader = await command.ExecuteReaderAsync())
-            {
-                if (reader.HasRows)
-                {
-                    while (await reader.ReadAsync())
-                    {
-                        List.Add(new Reservation { Id = reader.GetString(0), ClientName = reader.GetString(1),
-                            Date = DateOnly.FromDateTime(reader.GetDateTime(2)), Hour = reader.GetString(3), Service = reader.GetString(4)
-                        });
+            using var connection = new SqliteConnection(_connectionString);
+            var sql = "SELECT * FROM Reservation";
+            // Use the Query method to execute the query and return a list of objects    
+            return await connection.QueryAsync<Reservation>(sql);
 
-                    }
-                }
-            }
         }
         catch (Exception ex)
         {
-            if (ex.Message.ToLower().Contains("no such table"))
-            {
+            //if (ex.Message.ToLower().Contains("no such table"))
+            //{
 
-                command = new SqliteCommand("Create Table Service (Id,Name)", connection);
-                command.CommandType = System.Data.CommandType.Text;
-                command.ExecuteNonQuery();
+            //    command = new SqliteCommand("Create Table Service (Id,Name)", connection);
+            //    command.CommandType = System.Data.CommandType.Text;
+            //    command.ExecuteNonQuery();
 
-                command = new SqliteCommand("Insert into Service (Id, Name) Values ( '1', 'Corte'), ( '2', 'Corte y Afeitado')" +
-                ", ('3', 'Rasurado'), ( '4', 'Afeitado'), ( '5', 'Manicura')", connection);
-                command.CommandType = System.Data.CommandType.Text;
-                command.ExecuteNonQuery();
+            //    command = new SqliteCommand("Insert into Service (Id, Name) Values ( '1', 'Corte'), ( '2', 'Corte y Afeitado')" +
+            //    ", ('3', 'Rasurado'), ( '4', 'Afeitado'), ( '5', 'Manicura')", connection);
+            //    command.CommandType = System.Data.CommandType.Text;
+            //    command.ExecuteNonQuery();
 
-                command = new SqliteCommand("Create Table Reservation (Id,ClientName, Date, Hour, Service)", connection);
-                command.CommandType = System.Data.CommandType.Text;
-                command.ExecuteNonQuery();
-            }
+            //    command = new SqliteCommand("Create Table Reservation (Id,ClientName, Date, Hour, Service)", connection);
+            //    command.CommandType = System.Data.CommandType.Text;
+            //    command.ExecuteNonQuery();
+            //}
             throw (ex);
         }
-        return await Task.FromResult(List);
+       // return await Task.FromResult(List);
          
     }
 }

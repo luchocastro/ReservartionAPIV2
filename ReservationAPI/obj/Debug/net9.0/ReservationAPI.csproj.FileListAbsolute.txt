@@ -347,3 +347,5 @@ C:\Users\Usuario\source\repos\RepositorioAPI.V2\ReservartionAPI\ReservationAPI\o
 C:\Users\Usuario\source\repos\RepositorioAPI.V2\ReservartionAPI\ReservationAPI\obj\Debug\net9.0\ReservationAPI.pdb
 C:\Users\Usuario\source\repos\RepositorioAPI.V2\ReservartionAPI\ReservationAPI\obj\Debug\net9.0\ReservationAPI.genruntimeconfig.cache
 C:\Users\Usuario\source\repos\RepositorioAPI.V2\ReservartionAPI\ReservationAPI\obj\Debug\net9.0\ref\ReservationAPI.dll
+C:\Users\Usuario\source\repos\RepositorioAPI.V2\ReservartionAPI\ReservationAPI\obj\Debug\net9.0\ReservationAPI.sourcelink.json
+C:\Users\Usuario\source\repos\RepositorioAPI.V2\ReservartionAPI\ReservationAPI\bin\Debug\net9.0\Dapper.dll

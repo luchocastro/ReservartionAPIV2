@@ -190,9 +190,9 @@ static class CustomExtensionsMethods
 
     public static IServiceCollection AddCustomDbContext(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddDbContext<ReservationContext>(options =>
+        services.AddDbContext<WriteReservationContext>(options =>
         {
-            options.UseSqlite(configuration["ConnectionString"]);
+            options.UseSqlite(configuration["ConnectionString"] ?? "Data Source=reservation.db");
         },
                     ServiceLifetime.Scoped  //Showing explicitly that the DbContext is shared across the HTTP request scope (graph of objects started in the HTTP request)
                 );
