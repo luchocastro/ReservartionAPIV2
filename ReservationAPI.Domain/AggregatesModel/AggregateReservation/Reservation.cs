@@ -15,7 +15,7 @@ namespace ReservationAPI.Domain.AggregatesModel.AggregateReservation
         public bool HasReservation { get; private set; } = true;
         public Reservation(string id, string clientName, DateOnly date, string hour, string service, int QtyPreviousReservation)
         {
-            if (QtyPreviousReservation > 1)
+            if (QtyPreviousReservation >= 1)
                 throw new Exception("No puede servar más de una vez para el mismo día");
             ClientName = clientName;
             Date = date;

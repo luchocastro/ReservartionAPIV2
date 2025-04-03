@@ -26,7 +26,7 @@ namespace ReservationAPI.Application.Commands.Handlers;
             var reservationDTO = new ReservationDTO 
             {
                 //Hacer acá la conversión de string a date
-                ClientName = reservationCommand.ClientName,
+                ClientName = reservationCommand.ClientName.Trim(),
                 Date = reservationCommand.Date,
                 Hour = reservationCommand.Hour,
                 Service = reservationCommand.ServiceId
@@ -37,8 +37,8 @@ namespace ReservationAPI.Application.Commands.Handlers;
         {
             throw new InvalidCastException(Const.DateWithouFormat);
         }
-        var reservations = await  _reservationQueries.GetQtyResrevationByName(reservationCommand.Date, reservationCommand.ClientName);
-        await _reservationRepository.CreateAsync(new Reservation(Guid.NewGuid().ToString(), reservationDTO.ClientName,
+        var reservations = await  _reservationQueries.GetQtyResrevationByName(reservationCommand.Date, reservationCommand.ClientName.Trim());
+        await _reservationRepository.CreateAsync(new Reservation(Guid.NewGuid().ToString(), reservationDTO.ClientName.Trim(),
         date, reservationDTO.Hour, reservationDTO.Service, reservations));
         await Task.FromResult(reservationDTO);
         }

@@ -75,14 +75,10 @@ namespace ReservationAPI.Application.Controllers
             {
                 await _createReservationCommandHandler.HandleAsync(createReservationCommand);
                 return Ok(createReservationCommand);
-
             }
              catch {
                 return UnprocessableEntity();
                     }
-
-
-
         }
     }
 }
