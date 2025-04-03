@@ -12,7 +12,7 @@ namespace ReservationAPI.Domain.AggregatesModel.AggregateReservation
         public DateOnly Date { get; private set; }
         public string Hour { get; private set; }
         public string Service { get; private set; }
-        public bool HasReservation { get; private set; } = true;
+        
         public Reservation(string id, string clientName, DateOnly date, string hour, string service, int QtyPreviousReservation)
         {
             if (QtyPreviousReservation >= 1)
@@ -22,11 +22,6 @@ namespace ReservationAPI.Domain.AggregatesModel.AggregateReservation
             Hour = hour;
             Id = id;
             Service = service;
-        }
-        public async void HasReservationForDate(IReservationRepository Repo, string clientName, DateOnly date)
-        {
-            var PreviousReservation = await Repo.GetReservationsByDayOrNameAsync(date, clientName);
-            HasReservation= PreviousReservation.Count() > 1;
         }
     }
 }
