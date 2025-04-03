@@ -16,14 +16,12 @@ namespace ReservationAPI.Infrastructure.Context;
 public class ReadReservationContext : DbContext 
 {
     public DbSet<ReadReservation> Reservations { get; set; }
+    
     public ReadReservationContext(DbContextOptions<ReadReservationContext> options) : base(options) { }
-
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         var configuration = new ReadReservationEntityTypeConfiguration();
         modelBuilder.ApplyConfiguration<ReadReservation>(configuration);
-
     }
-
 }

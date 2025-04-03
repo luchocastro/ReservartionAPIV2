@@ -1,5 +1,6 @@
 ﻿using ReservationAPI.Domain.AggregatesModel.AggregateReservation;
 using ReservationAPI.Infrastructure.Context;
+using ReservationAPI.Infrastructure.Context.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,7 @@ namespace ReservationAPI.Infrastructure.Repositories;
 
     public ReservationRepository(WriteReservationContext writeReservationContext)
     {
+        
         _writeReservationContext = writeReservationContext;
     }
 
@@ -24,21 +26,23 @@ namespace ReservationAPI.Infrastructure.Repositories;
 
         public async Task<Reservation> CreateAsync(Reservation reservation)
         {
-
-            var x = await _writeReservationContext.AddAsync(reservation);
-        _writeReservationContext.SaveChanges();
+        var writeReservation = new WriteReservation
+        {
+            ClientName = reservation.ClientName,
+            Id = reservation.Id,
+            Hour = reservation.Hour,
+            Date = reservation.Date,
+            Service = reservation.Service
+        };
+            _writeReservationContext.Add(writeReservation);
+            _writeReservationContext.SaveChanges();
             return await Task.FromResult(reservation);
         }
 
      
-        public async Task<IEnumerable<Domain.AggregatesModel.AggregateReservation.Reservation>> GetReservationsByDayOrNameAsync(DateOnly date, string name)
+        public async Task<IEnumerable<Reservation>> GetReservationsByDayOrNameAsync(DateOnly date, string name)
         {
             return await Task.FromResult(_reservations.Where(z => z.Date == date & (z.ClientName==name | string.IsNullOrEmpty(name))));
         }
 
-
-        Task<Domain.AggregatesModel.AggregateReservation.Reservation> IReservationRepository.GetByIdAsync(string id)
-        {
-            throw new NotImplementedException();
-        }
     }

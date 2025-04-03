@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReservationAPI.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb8ac20d66654fb3ce503ba99fc1125c58be49a6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5ab049b332dd275db7b9765f229f33abc259a5c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReservationAPI.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReservationAPI.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

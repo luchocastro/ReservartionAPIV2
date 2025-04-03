@@ -1,6 +1,7 @@
 ﻿
 
 using Dapper;
+using Google.Protobuf.Collections;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.VisualBasic;
@@ -40,19 +41,21 @@ public class ReservationQueries : IReservationQueries
         var Reservations = await connection.QueryAsync<Reservation>(sql, new { date = sdate }) ;
         var List = Reservations.Select(x => x.Hour);
         return await Task.FromResult(TotalHours.Select(x=>x.ToString().PadLeft(2, '0') + ":00").Where(h => List.ToList().IndexOf(h.ToString()) < 0).Select(x => x).ToList());        
-        
-        //deberìa vernir de la DB
-        
-
-        
     }
 
+    public async Task<int> GetQtyResrevationByName(string sdate, string name)
+    {
+        using var connection = new SqliteConnection(_connectionString);
+        var sql = "SELECT * FROM Reservation WHERE date=@date";
+        var Reservations = await connection.QueryAsync<Reservation>(sql, new { date = sdate});
+        return await Task.FromResult(Reservations.Where(x => x.ClientName == name).Count());
+    }
 
     public async Task<IEnumerable<Reservation>> GetReservations()
     {
+        using var connection = new SqliteConnection(_connectionString);
         try
         {
-            using var connection = new SqliteConnection(_connectionString);
             var sql = "SELECT * FROM Reservation";
             // Use the Query method to execute the query and return a list of objects    
             return await connection.QueryAsync<Reservation>(sql);
@@ -62,19 +65,11 @@ public class ReservationQueries : IReservationQueries
         {
             //if (ex.Message.ToLower().Contains("no such table"))
             //{
+            //    connection.ExecuteAsync("Create Table Service (ServiceId,Name)");
 
-            //    command = new SqliteCommand("Create Table Service (Id,Name)", connection);
-            //    command.CommandType = System.Data.CommandType.Text;
-            //    command.ExecuteNonQuery();
-
-            //    command = new SqliteCommand("Insert into Service (Id, Name) Values ( '1', 'Corte'), ( '2', 'Corte y Afeitado')" +
-            //    ", ('3', 'Rasurado'), ( '4', 'Afeitado'), ( '5', 'Manicura')", connection);
-            //    command.CommandType = System.Data.CommandType.Text;
-            //    command.ExecuteNonQuery();
-
-            //    command = new SqliteCommand("Create Table Reservation (Id,ClientName, Date, Hour, Service)", connection);
-            //    command.CommandType = System.Data.CommandType.Text;
-            //    command.ExecuteNonQuery();
+            //    connection.ExecuteAsync("Insert into Service (ServiceId, Name) Values ( 'Corte', 'Corte'), ( 'Corte y Afeitado', 'Corte y Afeitado')" +
+            //    ", ('Rasurado', 'Rasurado'), ( 'Afeitado', 'Afeitado'), ( 'Manicura', 'Manicura')");
+            //    connection.ExecuteAsync("Create Table Reservation (Id,ClientName, Date, Hour, Service)");
             //}
             throw (ex);
         }

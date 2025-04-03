@@ -7,32 +7,27 @@ using MediatR;
 using System.Runtime.Serialization;
 using ReservationAPI.Application.DTOs;
 using ICommand=ReservationAPI.Application.Commands.Interface.ICommand;
-using MediatR;
-using System.Windows.Input;
+
 namespace ReservationAPI.Application.Commands;
 
-
 public class CreateReservationCommand
-    : ReservationAPI.Application.Commands.Interface.ICommand
+    : ICommand
 {
- 
-    public string Id { get;  set; }
-
+    
     public string ClientName { get;  set; }
 
     public string Date { get;  set; }
 
     public string Hour { get;  set; }
 
-    public string Service { get;  set; }
+    public string ServiceId { get;  set; }  
 
-    public CreateReservationCommand(string id, string clientName, string date, string hour, string service)
+    public CreateReservationCommand(string clientName, string date, string hour, string serviceId)
     {
-        Id = id;
         ClientName = clientName;
         Date = date;
         Hour = hour;
-        Service = service;
+        ServiceId = serviceId;
     }
 
 

@@ -1,5 +1,5 @@
 ﻿using Google.Protobuf;
-using Mediator;
+
 using MediatR;
 
 using Microsoft.AspNetCore.Authentication;

@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.VisualBasic;
 using ReservationAPI.Domain.AggregatesModel.AggregateReservation;
 using ReservationAPI.Domain.Common;
+using ReservationAPI.Infrastructure.Context.Model;
 using ReservationAPI.Infrastructure.EntityConfiguration;
 using ReservationAPI.Infrastructure.Extentions;
 using ReservationAPI.Infrastructure.Extentions.Extentions.Infrastructure;
@@ -15,7 +16,7 @@ namespace ReservationAPI.Infrastructure.Context;
 public class WriteReservationContext : DbContext, IUnitOfWork
 {
     public const string DEFAULT_SCHEMA = "ordering";
-    public DbSet<Reservation> Reservations { get; init; }
+    public DbSet<WriteReservation> Reservations { get; init; }
  
     private readonly IMediator _mediator;
     private IDbContextTransaction _currentTransaction;
@@ -37,7 +38,7 @@ public class WriteReservationContext : DbContext, IUnitOfWork
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         var configuration = new ReservationEntityTypeConfiguration();
-        modelBuilder.ApplyConfiguration<Reservation>(configuration);
+        modelBuilder.ApplyConfiguration<WriteReservation>(configuration);
 
     }
 

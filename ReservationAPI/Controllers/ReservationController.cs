@@ -1,15 +1,11 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using ReservationAPI.Application.Commands;
-using ReservationAPI.Application.Commands.Handlers;
 using ReservationAPI.Application.Commands.Interface;
 using ReservationAPI.Application.DTOs;
 using ReservationAPI.Application.Queries;
 using System.Diagnostics;
 using System.Net;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 using static ReservationAPI.Application.Commands.CreateReservationCommand;
 using Service = ReservationAPI.Application.DTOs.Service;
 
@@ -19,23 +15,15 @@ namespace ReservationAPI.Application.Controllers
     [Route("api/[controller]")]
     public class ReservationController : ControllerBase
     {
-        private readonly IMediator _mediator;
-        private readonly ILogger<ReservationController> _logger;
         private readonly IReservationQueries _reservationQueries;
-        private readonly IServiceQueries _serviceQueries; 
         private readonly ICommandHandler<CreateReservationCommand> _createReservationCommandHandler;
         public ReservationController(
-            IMediator mediator,
             ILogger<ReservationController> logger,
             IReservationQueries reservationQueries,
-            IServiceQueries serviceQueries,
             ICommandHandler<CreateReservationCommand> createReservationCommandHandler
             )
         {
-            _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
-            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
             _reservationQueries = reservationQueries  ?? throw new ArgumentNullException(nameof(reservationQueries));
-            _serviceQueries = serviceQueries ?? throw new ArgumentNullException(nameof(serviceQueries));
             _createReservationCommandHandler= createReservationCommandHandler ?? throw new ArgumentNullException(nameof(_createReservationCommandHandler));
         }
         [Route("reservations")]
@@ -68,8 +56,6 @@ namespace ReservationAPI.Application.Controllers
         {
             try
             {
-                //Todo: It's good idea to take advantage of GetOrderByIdQuery and handle by GetCustomerByIdQueryHandler
-                //var order customer = await _mediator.Send(new GetOrderByIdQuery(orderId));
               var reservation = await _reservationQueries.GetFreeHours(date);
 
                 return Ok(reservation);
@@ -81,23 +67,7 @@ namespace ReservationAPI.Application.Controllers
                 return NotFound();
             }
         }
-        [Route("servicies")]
-        [HttpGet]
-        [ProducesResponseType(typeof(Service), (int)HttpStatusCode.OK)]
-        [ProducesResponseType((int)HttpStatusCode.NotFound)]
-        public async Task<ActionResult> GetServiciesAsync()
-        {
-            try
-            {
-                var reservation = await _serviceQueries.GetServiceAsync();
-                return Ok(reservation);
-            }
-            catch (Exception ex)
-            {
-                return NotFound();
-            }
-        }
-        [Route("reservation")]
+        [Route("CreateReservation")]
         [HttpPost]
         public async Task<ActionResult<ReservationDTO>> CreateReservationDataAsync([FromBody] CreateReservationCommand createReservationCommand)
         {
@@ -107,7 +77,7 @@ namespace ReservationAPI.Application.Controllers
                 return Ok(createReservationCommand);
 
             }
-            catch {
+             catch {
                 return UnprocessableEntity();
                     }
 
