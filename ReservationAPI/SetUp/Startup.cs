@@ -85,7 +85,7 @@ public class Startup
             {
                 c.SwaggerEndpoint($"{(!string.IsNullOrEmpty(pathBase) ? pathBase : string.Empty)}/swagger/v1/swagger.json", "Ordering.API V1");
                 c.OAuthClientId("orderingswaggerui");
-                c.OAuthAppName("Ordering Swagger UI");
+                c.OAuthAppName("Reservation System UI");
             });
 
         app.UseRouting();
